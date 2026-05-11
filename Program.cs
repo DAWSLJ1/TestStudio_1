@@ -8,7 +8,7 @@
 
             /* Luke Dawson */
 
-            string temp, guess, cont;
+            string temp2, guess, cont;
             Random rand = new Random();
             int number, num, contin, tries, wonder;
             number = rand.Next(0, 101);
@@ -45,8 +45,8 @@
                 Console.WriteLine("You got it right!!!");
                 tries++;
                 Console.WriteLine("How many guesses did it take you to do it?");
-                temp = Console.ReadLine();
-                wonder = Convert.ToInt32(temp);
+                temp2 = Console.ReadLine();
+                wonder = Convert.ToInt32(temp2);
 
                 if (wonder == tries)
                 {
