@@ -4,8 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             /* Luke Dawson */
 
             string temp2, guess, cont;
