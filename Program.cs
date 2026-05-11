@@ -4,9 +4,11 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello, World!");
+
             /* Luke Dawson */
 
-            string temp2, guess, cont;
+            string temp, guess, cont;
             Random rand = new Random();
             int number, num, contin, tries, wonder;
             number = rand.Next(0, 101);
@@ -43,8 +45,8 @@
                 Console.WriteLine("You got it right!!!");
                 tries++;
                 Console.WriteLine("How many guesses did it take you to do it?");
-                temp2 = Console.ReadLine();
-                wonder = Convert.ToInt32(temp2);
+                temp = Console.ReadLine();
+                wonder = Convert.ToInt32(temp);
 
                 if (wonder == tries)
                 {
@@ -69,11 +71,22 @@
             Console.WriteLine("Thanks for playing :)");
             Thread.Sleep(1200);
 
-            Console.WriteLine("Hello, my name is Josh."); // Added my name to the code - JS
+            // Josh's Section
+            Console.WriteLine("Hello, my name is Josh.");
+            int numberOfPeople = 0;
+            if (numberOfPeople == 0) 
+            {
+                Console.WriteLine("There are no people in this group.");
+            }
+            else
+            {
+                Console.WriteLine("There are people in this group.");
+            } 
 
 
-            //Zac lab 10
-            Random random = new Random();
+
+                //Zac lab 10
+                Random random = new Random();
             int[] dice = new int[6];
             for (int i = 0; i < 6000; i++) dice[random.Next(6)]++;
             Console.WriteLine($"results \t1\t2\t3\t4\t5\t6\n6000 \t\t{dice[0]}\t{dice[1]}\t{dice[2]}\t{dice[3]}\t{dice[4]}\t{dice[5]}");
